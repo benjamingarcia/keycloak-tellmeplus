@@ -1,16 +1,9 @@
 = Keycloak: Gestion de l'identité et des accès dans une architecture micro-services  
 :imagesdir: images
 :source-highlighter: highlightjs
+:highlightjs-theme: solarized-dark.css 
 :revealjs_theme: solarized
-
-[transition=convex]
-== Clement Compas
-
-[transition=convex]
-== Benjamin Garcia
-
-* Java Since 2007
-* Scala Since 1 years 
+:icons: font
 
 [transition=convex]
 == Tellmeplus
@@ -18,6 +11,18 @@
 [%step]
 * On fait quoi ?
 * Et la sécurité ?
+
+
+[transition=convex]
+=== Clement Compas
+
+[transition=convex]
+=== Benjamin Garcia
+
+WARNING: Developer senior
+
+* Java Since 2007
+* Scala Since 1 years 
 
 [transition=convex]
 == Les Standards dont nous aurons besoins
@@ -28,6 +33,12 @@
 
 [transition=convex]
 == Gestion des utilisateurs sur notre plateforme en 2017
+
+
+[source,java]
+----
+System.out.println("hello world");
+----
 
 [transition=convex]
 == La transformation en micro service et recherche d'une nouveau systène d'auth
