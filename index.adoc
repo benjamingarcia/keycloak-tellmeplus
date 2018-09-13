@@ -1,57 +1,49 @@
 = Keycloak: Gestion de l'identité et des accès dans une architecture micro-services  
 :imagesdir: images
 :source-highlighter: highlightjs
-:highlightjs-theme: solarized-dark.css 
+:highlightjs-theme: solarized-dark.css
 :revealjs_theme: solarized
+:revealjs_transition: convex
 :icons: font
 
-[transition=convex]
-== Tellmeplus
+== Clement Compas
 
-[%step]
-* On fait quoi ?
-* Et la sécurité ?
-
-
-[transition=convex]
-=== Clement Compas
-
-[transition=convex]
 === Benjamin Garcia
 
-WARNING: Developer senior
+image::benji.png[]
 
-* Java Since 2007
-* Scala Since 1 years 
+* icon:tags[]: developer senior 
+** icon:building[]: TellMePlus (since 2017) 
+** icon:briefcase[]: JUG Leader
 
-[transition=convex]
-== Les Standards dont nous aurons besoins
+== Quelques définitions
 
 [%step]
 * OAuth 2
 * OIDC
-
-[transition=convex]
-== Gestion des utilisateurs sur notre plateforme en 2017
+* JWT
 
 
-[source,java]
-----
-System.out.println("hello world");
-----
+== L'ancienne architecture 
 
-[transition=convex]
-== La transformation en micro service et recherche d'une nouveau systène d'auth
+[%step]
+* Basic auth
+* Isolation by Databases
 
-[transition=convex]
+== La transformation en micro service 
+
+CAUTION: TODO add schema
+
 == Keycloak Vs Hydra
 
-[transition=convex]
-== Présentation des features de Keycloak
+=== Hydra
 
-[transition=convex]
+=== Keycloak
+
 == Notre utilisation : token & autre complication...
 
 
-[transition=convex]
 == Question ???
+
+== Référence
+
