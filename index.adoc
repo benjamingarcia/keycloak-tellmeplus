@@ -32,18 +32,51 @@ image::benji.png[]
 
 == La transformation en micro service 
 
+[%step]
+* create μ-services in Golang 
+* API stays in Scala
+* frontend stays in Angularjs
+
 CAUTION: TODO add schema
 
 == Keycloak Vs Hydra
 
+[%notitle]
 === Hydra
 
+image::https://avatars1.githubusercontent.com/u/25334553?s=200&v=4[]
+[%step]
+* Golang tools SDK in many platform
+* Need other tools:
+[%step]
+** ORY Security Console (GUI) not on promise
+** ORY Oathkeeper (proxy)
+** ORY Keto (access control)
+
+[%notitle]
 === Keycloak
 
-== Notre utilisation : token & autre complication...
+image::https://www.keycloak.org/resources/images/keycloak_logo_480x108.png[]
+[%step]
+* Jboss based
+* All-In-One
 
+== Mise en pratique
+
+[%step]
+* Realms
+* Tokens
+[%step]
+** access token
+** refresh token
+** offline token
+* Multitenants
 
 == Question ???
 
 == Référence
 
+* https://www.keycloak.org[keycloak]
+* https://github.com/ory/hydra[Hydra]
+* https://www.ory.sh/[ORY]
+* https://openid.net/connect/[OIDC]
