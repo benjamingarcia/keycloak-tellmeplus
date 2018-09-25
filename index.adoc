@@ -8,21 +8,30 @@
 
 == Clement Compas
 
+image::ccompas.png[]
+
+* icon:tags[]: Lead developer 
+** icon:building[]: Tellmeplus (since 2015) 
+** icon:wrench[]: Data & ML
+
 === Benjamin Garcia
 
 image::benji.png[]
 
-* icon:tags[]: developer senior 
-** icon:building[]: TellMePlus (since 2017) 
+* icon:tags[]: Senior developer  
+** icon:building[]: Tellmeplus (since 2017) 
 ** icon:briefcase[]: JUG Leader
 
 == Quelques définitions
 
 [%step]
 * OAuth 2
-* OIDC
 * JWT
+* OIDC
 
+=== OAuth 2
+=== JWT
+=== OIDC
 
 == L'ancienne architecture 
 
@@ -32,7 +41,13 @@ image::benji.png[]
 
 == La transformation en micro service 
 
-CAUTION: TODO add schema
+=== Monolith
+
+image::oldFlow.svg[]
+
+=== Services
+
+image::newFlow.svg[]
 
 == Keycloak Vs Hydra
 
