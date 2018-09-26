@@ -1,10 +1,12 @@
 = Keycloak: Gestion de l'identité et des accès dans une architecture micro-services  
 :imagesdir: images
 :source-highlighter: highlightjs
-:highlightjs-theme: solarized-dark.css
+//beige, black, league, night, serif, simple, sky, solarized, white
 :revealjs_theme: solarized
+//none, fade, slide, convex, concave, zoom
 :revealjs_transition: convex
 :icons: font
+:revealjs_slideNumber: true
 
 == Clement Compas
 
@@ -22,6 +24,11 @@ image::benji.png[]
 ** icon:building[]: Tellmeplus (since 2017)
 ** icon:briefcase[]: JUG Leader
 
+[%notitle]
+== TellMePlus
+
+image::tellmeplus.png[tmp, 300]
+
 == Quelques définitions
 
 [%step]
@@ -30,14 +37,21 @@ image::benji.png[]
 * OIDC
 
 === OAuth 2
+
+
 === JWT
+
+
 === OIDC
 
-== L'ancienne architecture 
+== L'ancienne sécurité
 
 [%step]
 * Basic auth
-* Isolation by Databases
+* Isolation par la base de donnée
+* Gestion des utilisateurs en internes 🙈
+* Pas de SSO 😢
+* Pas de délegation d'auth 😭
 
 == La transformation en micro service 
 
@@ -54,37 +68,47 @@ image::newFlow.svg[]
 [%notitle]
 === Hydra
 
-image::https://avatars1.githubusercontent.com/u/25334553?s=200&v=4[]
+image::hydra_red.png[hydra, 200]
 [%step]
-* Golang tools SDK in many platform
-* Need other tools:
+* SDK en go, js, ...
+* Nécessite des outils supplémentaire:
 [%step]
-** ORY Security Console (GUI) not on promise
-** ORY Oathkeeper (proxy)
-** ORY Keto (access control)
+** ORY Oauthkeeper (proxy)
+** ORY Security Console (GUI)
+** ORY Keto (contrôle d'accès)
 
 [%notitle]
 === Keycloak
 
-image::https://www.keycloak.org/resources/images/keycloak_logo_480x108.png[]
+image::keycloak_icon.png[keycloak, 200]
 [%step]
-* Jboss based
-* All-In-One
+* SDK pour jvm, springboot, js, go
+* GUI / CLI
+* Proxy google/facebook....
+* Contrôle d'accès
 
 == Mise en pratique
 
 [%step]
-* Realms
-* Tokens
+* Délégation des utilisateurs
+* Intégration à l'application
+* Access token
+* Offline token
+
+=== Multitenants
+
 [%step]
-** access token
-** refresh token
-** offline token
-* Multitenants
+* Pourquoi ?
+* Les Realms
+* Plomberie 🔧
+[%step]
+** La configuration
+** Les routes
+** Les adapteurs
 
-== Question ???
+== Conclusion 🤔
 
-== Référence
+== Question & Référence
 
 * https://www.keycloak.org[keycloak]
 * https://github.com/ory/hydra[Hydra]
