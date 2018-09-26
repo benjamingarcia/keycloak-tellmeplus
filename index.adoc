@@ -33,14 +33,22 @@ image::tellmeplus.png[tmp, 300]
 
 [%step]
 * OAuth 2
+[%step]
+** Resource owner
+** Resource server
+** Client application
+** Autorization server
 * JWT
 * OIDC
 
 === OAuth 2
 
+image::oauth.png[]
 
+[%notitle,background-iframe="https://jwt.io/#debugger-io"]
 === JWT
 
+//image::jwt.jpg[jwt, 300]
 
 === OIDC
 
